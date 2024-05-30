@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Triad</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="new_message">New Message</string>
+    <string name="to">To:</string>
+    <string name="recepient">Recepient (Enter the destination email)</string>
+    <string name="subject">Subject</string>
+    <string name="message">Message</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="send">Send</string>
+</resources>
