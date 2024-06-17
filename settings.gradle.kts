@@ -21,4 +21,6 @@ dependencyResolutionManagement {
 
 rootProject.name = "Triad"
 include(":app")
- 
+include(":domain")
+include(":data")
+include(":koin")

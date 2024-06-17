@@ -2,7 +2,7 @@ package com.example.triad.factory
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
-import com.example.triad.modelview.MainViewModel
+import com.example.triad.viewmodel.MainViewModel
 
 class ViewModelFactory : ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {

@@ -10,7 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import com.example.triad.databinding.FragmentMainBinding
 import com.example.triad.factory.ViewModelFactory
-import com.example.triad.modelview.MainViewModel
+import com.example.triad.viewmodel.MainViewModel
 import com.example.triad.repository.EmailData
 
 class MainFragment : Fragment() {

@@ -1,4 +1,4 @@
-package com.example.triad.modelview
+package com.example.triad.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
