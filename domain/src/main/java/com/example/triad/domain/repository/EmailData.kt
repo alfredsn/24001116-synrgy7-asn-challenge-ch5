@@ -1,4 +1,4 @@
-package com.example.triad.repository
+package com.example.triad.domain.repository
 
 data class EmailData(
     val sendTo: String,

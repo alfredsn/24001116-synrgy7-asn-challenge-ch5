@@ -1,4 +1,4 @@
-package com.example.triad.datastore
+package com.example.triad.domain.datastore
 
 import android.content.Context
 import androidx.datastore.preferences.core.booleanPreferencesKey

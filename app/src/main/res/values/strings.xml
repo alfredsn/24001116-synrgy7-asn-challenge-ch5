@@ -11,4 +11,6 @@
     <string name="login">Login</string>
     <string name="username">Username</string>
     <string name="send">Send</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_logout">Logout</string>
 </resources>

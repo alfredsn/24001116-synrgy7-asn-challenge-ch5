@@ -1,18 +1,20 @@
-package com.example.triad.repository
+package com.example.triad.data.repository
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
-import com.example.triad.api.ClientApi
+import com.example.triad.data.api.ClientApi
+import com.example.triad.domain.repository.EmailData
+import com.example.triad.domain.repository.MainRepository
 import okhttp3.MediaType.Companion.toMediaTypeOrNull
 import okhttp3.RequestBody.Companion.toRequestBody
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
 
-class MainRepository {
+class MainRepositoryImpl : MainRepository {
     private val mailSenderApi = ClientApi.api
 
-    fun sendEmail(emailData: EmailData): LiveData<Result<Any?>> {
+    override fun sendEmail(emailData: EmailData): LiveData<Result<Any?>> {
         val result = MutableLiveData<Result<Any?>>()
 
         val json = """

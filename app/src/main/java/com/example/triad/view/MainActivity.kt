@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.lifecycleScope
 import androidx.navigation.fragment.NavHostFragment
 import com.example.triad.R
-import com.example.triad.datastore.DataStoreManager
+import com.example.triad.domain.datastore.DataStoreManager
 import kotlinx.coroutines.flow.first
 import kotlinx.coroutines.launch
 

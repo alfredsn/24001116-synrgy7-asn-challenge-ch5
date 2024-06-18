@@ -1,4 +1,4 @@
-package com.example.triad.api
+package com.example.triad.data.api
 
 import okhttp3.RequestBody
 import retrofit2.Call

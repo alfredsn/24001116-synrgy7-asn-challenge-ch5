@@ -7,23 +7,21 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
-import androidx.lifecycle.Observer
 import com.example.triad.databinding.FragmentMainBinding
-import com.example.triad.factory.ViewModelFactory
+import com.example.triad.domain.repository.EmailData
 import com.example.triad.viewmodel.MainViewModel
-import com.example.triad.repository.EmailData
 
 class MainFragment : Fragment() {
 
     private var _binding: FragmentMainBinding? = null
     private val binding get() = _binding!!
 
-    private val viewModel: MainViewModel by viewModels { ViewModelFactory() }
+    private val viewModel: MainViewModel by viewModels()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentMainBinding.inflate(inflater, container, false)
         return binding.root
     }
@@ -43,13 +41,13 @@ class MainFragment : Fragment() {
             viewModel.sendEmail(emailData)
         }
 
-        viewModel.sendEmailResult.observe(viewLifecycleOwner, Observer { result ->
+        viewModel.sendEmailResult.observe(viewLifecycleOwner) { result ->
             result.onSuccess {
                 Toast.makeText(context, "Email sent successfully", Toast.LENGTH_SHORT).show()
             }.onFailure {
                 Toast.makeText(context, "Failed to send email", Toast.LENGTH_SHORT).show()
             }
-        })
+        }
     }
 
     override fun onDestroyView() {
